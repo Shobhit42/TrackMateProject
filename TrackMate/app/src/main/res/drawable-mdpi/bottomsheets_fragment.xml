@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Sort Runs by"
+        android:textColor="@color/black"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintDimensionRatio="9:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <TextView
+        android:id="@+id/date_bottomsheet_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Dates"
+        android:textColor="@color/black"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/runtime_bottomsheet_title"
+        app:layout_constraintDimensionRatio="7:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/runtime_bottomsheet_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Running Time"
+        android:textColor="@color/teal_700"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/AverageSpeed_bottomsheet_title"
+        app:layout_constraintDimensionRatio="7:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/date_bottomsheet_title" />
+
+    <TextView
+        android:id="@+id/AverageSpeed_bottomsheet_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Average Speed"
+        android:textColor="@color/black"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/caloriesBurned_bottomsheet_title"
+        app:layout_constraintDimensionRatio="7:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/runtime_bottomsheet_title" />
+
+    <TextView
+        android:id="@+id/caloriesBurned_bottomsheet_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Calories Burned"
+        android:textColor="@color/black"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/DistanceCovered_bottomsheet_title"
+        app:layout_constraintDimensionRatio="7:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/AverageSpeed_bottomsheet_title" />
+
+    <TextView
+        android:id="@+id/DistanceCovered_bottomsheet_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Distance Covered"
+        android:textColor="@color/black"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintDimensionRatio="7:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesBurned_bottomsheet_title" />
+
+    <ImageView
+        android:id="@+id/calender"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/calendar_icon"
+        app:layout_constraintBottom_toTopOf="@+id/runningTime_image"
+        app:layout_constraintDimensionRatio="1.5:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/distance_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/distance"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintDimensionRatio="1.5:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/calories_image" />
+
+    <ImageView
+        android:id="@+id/calories_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/kcal"
+        app:layout_constraintBottom_toTopOf="@+id/distance_image"
+        app:layout_constraintDimensionRatio="1.5:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/averageSpeed_image" />
+
+    <ImageView
+        android:id="@+id/averageSpeed_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/speedometer"
+        app:layout_constraintBottom_toTopOf="@+id/calories_image"
+        app:layout_constraintDimensionRatio="1.5:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/runningTime_image" />
+
+    <ImageView
+        android:id="@+id/runningTime_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/running_man"
+        app:layout_constraintBottom_toTopOf="@+id/averageSpeed_image"
+        app:layout_constraintDimensionRatio="1.5:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/calender" />
+
+    <ImageView
+        android:id="@+id/done"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_done_24"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/done_runningTime"
+        app:layout_constraintDimensionRatio="1.9:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/close_bottomsheet" />
+
+    <ImageView
+        android:id="@+id/close_bottomsheet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintDimensionRatio="1.9:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <ImageView
+        android:id="@+id/done_caloriesBurned"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_baseline_done_24"
+        app:layout_constraintBottom_toTopOf="@+id/done_distanceCovered"
+        app:layout_constraintDimensionRatio="1.9:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/done_AverageSpeed" />
+
+    <ImageView
+        android:id="@+id/done_AverageSpeed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_baseline_done_24"
+        app:layout_constraintBottom_toTopOf="@+id/done_caloriesBurned"
+        app:layout_constraintDimensionRatio="1.9:1"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/done_runningTime" />
+
+    <ImageView
+        android:id="@+id/done_runningTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_baseline_done_24"
+        app:layout_constraintBottom_toTopOf="@+id/done_AverageSpeed"
+        app:layout_constraintDimensionRatio="1.9:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/done" />
+
+    <ImageView
+        android:id="@+id/done_distanceCovered"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_baseline_done_24"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintDimensionRatio="1.9:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/done_caloriesBurned" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:text="Reset"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="21sp"
+        android:autoSizeMinTextSize="15sp"
+
+        android:textColor="@color/teal_700"
+        android:backgroundTint="#DBEFEF"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintDimensionRatio="3:1"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toStartOf="@id/btnDone"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="21sp"
+        android:autoSizeMinTextSize="15sp"
+        android:text="Done"
+
+        android:textAllCaps="false"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintDimensionRatio="3:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toEndOf="@id/btnReset"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="3dp"
+        android:background="#D1D0D0"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/btnDone"
+        app:layout_constraintStart_toEndOf="@+id/btnReset"
+        app:layout_constraintTop_toBottomOf="@+id/btnDone"
+        app:layout_constraintVertical_bias="0.396" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

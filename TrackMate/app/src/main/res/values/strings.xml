@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TrackMate</string>
+    <string-array name="filter_options">
+        <item>Date</item>
+        <item>Running Time</item>
+        <item>Distance</item>
+        <item>Average Speed</item>
+        <item>Calories Burned</item>
+    </string-array>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyC8xITDLp18bDNwX4Sx1yC6NuxAMfdxI5E</string>
+<!--    <string name="default_web_client_id">112409000795-5o70gijm2vf0udehlg68a9ir8a6lnd3e.apps.googleusercontent.com</string>-->
+</resources>

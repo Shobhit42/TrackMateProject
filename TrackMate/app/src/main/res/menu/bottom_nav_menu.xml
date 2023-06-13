@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile_select"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/tracksFragment"
+        android:icon="@drawable/pathway_select"
+        android:title="Tracks"/>
+
+    <item
+        android:id="@+id/startFragment"
+        android:icon="@drawable/add_select"
+        android:title="Start"/>
+
+    <item
+        android:id="@+id/statisticsFragment"
+        android:icon="@drawable/statistics_select"
+        android:title="Statistics"/>
+
+    <item
+        android:id="@+id/feedFragment"
+        android:icon="@drawable/feed_select"
+        android:title="Feeds"/>
+
+</menu>

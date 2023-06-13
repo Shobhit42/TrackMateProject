@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="serif"
+        android:text="About Me"
+        android:layout_marginTop="35dp"
+        android:textColor="#6B29AC"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintDimensionRatio="8:1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/edname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="NickName"
+        android:textColor="#6B29AC"
+        app:autoSizeTextType="uniform"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/edName"
+        app:layout_constraintDimensionRatio="12:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_perm_identity_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Name"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintDimensionRatio="6.5:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/edtoggle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Gender"
+        android:textColor="#6B29AC"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/toggle"
+        app:layout_constraintDimensionRatio="12:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <RadioGroup
+        android:id="@+id/toggle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/pink_out_line"
+        android:checkedButton="@+id/offer"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline4">
+
+        <RadioButton
+            android:id="@+id/Male_toggle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:drawableStart="@drawable/male_icon"
+            android:paddingStart="35dp"
+            android:drawablePadding="12dp"
+            android:text="Male"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioButton
+            android:id="@+id/offer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:drawableStart="@drawable/female_icon"
+            android:paddingStart="25dp"
+            android:drawablePadding="12dp"
+            android:button="@null"
+            android:text="Female"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Weight"
+        android:textColor="#6B29AC"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/ruler_picker1"
+        app:layout_constraintDimensionRatio="9:1"
+        app:layout_constraintEnd_toStartOf="@+id/btnKg"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnKg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:autoSizeMaxTextSize="19sp"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/buttoneffect_kg"
+        android:gravity="center"
+        android:text="Kg"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/tvWeight"
+        app:layout_constraintBottom_toTopOf="@+id/ruler_picker1"
+        app:layout_constraintDimensionRatio="2.5:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <com.kevalpatel2106.rulerpicker.RulerValuePicker
+        android:id="@+id/ruler_picker1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:indicator_color="#6B29AC"
+        android:background="@color/white"
+        app:indicator_interval="10dp"
+        app:indicator_width="2dp"
+        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:max_value="150"
+        app:min_value="25"
+        app:notch_color="#C42DCF"
+        app:ruler_text_color="#6B29AC"
+        app:ruler_text_size="6sp"
+        tools:ignore="MissingClass,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/finalWeight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="60 Kg"
+        android:textColor="#6B29AC"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintDimensionRatio="7:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/ruler_picker1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="21sp"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/btneffect_aboutme"
+        android:gravity="center"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="7:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/avatarFragment">
+
+    <action android:id="@+id/action_global_trackingFragment"
+        app:destination="@id/startFragment"
+        app:launchSingleTop="true"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.trackmate.ui.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_walkStatisticFragment"
+            app:destination="@id/walkStatisticFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_profileFragment_to_runStatisticsFragment"
+            app:destination="@id/runStatisticsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_profileFragment_to_cycleStatisticFragment"
+            app:destination="@id/cycleStatisticFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/tracksFragment"
+        android:name="com.example.trackmate.ui.fragments.TracksFragment"
+        android:label="fragment_tracks"
+        tools:layout="@layout/fragment_tracks" >
+        <action
+            android:id="@+id/action_tracksFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.trackmate.ui.fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.trackmate.ui.fragments.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.example.trackmate.ui.fragments.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" />
+    <fragment
+        android:id="@+id/runStatisticsFragment"
+        android:name="com.example.trackmate.ui.fragments.RunStatisticsFragment"
+        android:label="fragment_run_statistics"
+        tools:layout="@layout/fragment_run_statistics" >
+        <action
+            android:id="@+id/action_runStatisticsFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/walkStatisticFragment"
+        android:name="com.example.trackmate.ui.fragments.WalkStatisticsFragment"
+        android:label="fragment_walk_statistic"
+        tools:layout="@layout/fragment_walk_statistic" >
+        <action
+            android:id="@+id/action_walkStatisticFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cycleStatisticFragment"
+        android:name="com.example.trackmate.ui.fragments.CycleStatisticsFragment"
+        android:label="fragment_cycle_statistic"
+        tools:layout="@layout/fragment_cycle_statistic" >
+        <action
+            android:id="@+id/action_cycleStatisticFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/avatarFragment"
+        android:name="com.example.trackmate.ui.fragments.AvatarFragment"
+        android:label="AvatarFragment" >
+        <action
+            android:id="@+id/action_avatarFragment_to_setupFragment"
+            app:destination="@id/setupFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.example.trackmate.ui.fragments.SetupFragment"
+        android:label="SetupFragment" >
+        <action
+            android:id="@+id/action_setupFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.trackmate.ui.fragments.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_profileFragment2"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_settingsFragment_to_avatarEditFragment"
+            app:destination="@id/avatarEditFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.trackmate.ui.fragments.DetailsFragment"
+        android:label="DetailsFragment" >
+        <action
+            android:id="@+id/action_detailsFragment_to_tracksFragment"
+            app:destination="@id/tracksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/avatarEditFragment"
+        android:name="com.example.trackmate.ui.fragments.AvatarEditFragment"
+        android:label="AvatarEditFragment" >
+        <action
+            android:id="@+id/action_avatarEditFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+</navigation>

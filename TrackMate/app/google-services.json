@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "112409000795",
+    "project_id": "trackmate-394cc",
+    "storage_bucket": "trackmate-394cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112409000795:android:28448d83e55556b9b8f87e",
+        "android_client_info": {
+          "package_name": "com.example.trackmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112409000795-5o70gijm2vf0udehlg68a9ir8a6lnd3e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trackmate",
+            "certificate_hash": "bcb24ab4f57572f00dccc5c337c5a3da19e45137"
+          }
+        },
+        {
+          "client_id": "112409000795-7qojg3r5atsuvcpf3j21ph4k1m0063bb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1oeUw9rVPc-u3T_McXR4eIV3DgAi7ktc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112409000795-7qojg3r5atsuvcpf3j21ph4k1m0063bb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
